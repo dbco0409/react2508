@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,26 +6,44 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+          <div className="inner">
+              <h1>이유채의 React 과제방</h1>
+              <nav className="menu">
+              <a href="https://dbco0409.github.io/html2507/" className="css"><i className="fa-brands fa-css"></i> CSS</a>
+              <a href="https://dbco0409.github.io/js2507/" className="js"><i className="fa-brands fa-js"></i> JS</a>
+              <a href="https://dbco0409.github.io/react2508/" className="active react"><i className="fa-brands fa-react"></i> React</a>
+              </nav>
+          </div>
+      </header>
+      <section className="main02">
+        <div className="nav">
+            <table>
+                <colgroup>
+                <col width="120"/>
+                <col/>
+                <col width="100"/>
+                </colgroup>
+                <tr>
+                    <th>REACT 1</th>
+                    <td><a href="./work/react0811/index.html" target="page">React 연습</a></td>
+                    <td className="date" rowspan="2">25-08-11</td>
+                </tr>
+                <tr>
+                    <th>REACT 2</th>
+                    <td><a href="./work/react0811_02/index.html" target="page">React UseState 예제</a></td>
+                </tr>
+                <tr>
+                    <th>REACT 3</th>
+                    <td><a href="./work/react0812/index.html" target="page">React UseState, UseEffect 예제</a></td>
+                    <td className="date">25-08-12</td>
+                </tr>
+            </table>
+        </div>
+        <div className="content"> 
+            <iframe src="" frameborder="0" name="page" id="page"></iframe>
+        </div>
+    </section>
     </>
   )
 }
