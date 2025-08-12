@@ -8,6 +8,7 @@ import ExUseEffect01 from './components/ExUseEffect01';
 import ExUseEffect02 from './components/ExUseEffect02';
 import ExUseEffect03 from './components/ExUseEffect03';
 import ExUseEffect04 from './components/ExUseEffect04';
+import ExUseEffect05 from './components/ExUseEffect05';
 
 function App() {
   
@@ -25,7 +26,8 @@ function App() {
       {/* <ExUseEffect01/>
       <ExUseEffect02/> */}
       {/* <ExUseEffect03/> */}
-      <ExUseEffect04/>
+      {/* <ExUseEffect04/> */}
+      <ExUseEffect05/>
     </>
   )
 }
