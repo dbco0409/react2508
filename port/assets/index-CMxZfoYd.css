@@ -86,7 +86,7 @@ html, body{height:100%; margin:0; padding:0; cursor:none; }
     opacity: 0;
   }
 }
-button{cursor:pointer;}
+button, a{cursor:none;}
 
 header{position:fixed; top:0; left:0; width:100%; height:60px; z-index:9;  }
 header .logo{position:absolute; top:20px; left:2%; text-align:center; transition: top 0.5s;}
@@ -94,7 +94,7 @@ header.active .logo{top:-50px;}
 header .logo a{font-size:24px; color: #b85bfa; text-shadow:0px 0px 10px #421d69; text-decoration: none; font-weight:900;}
 header .logo p{color:rgba(255,255,255); font-size:14px; margin:0;  }
 
-header #menu{position:absolute; top:15px; right:2%; width:50px; height:50px; background: linear-gradient(45deg, #3f00a5, #a24be1) #3f00a5; border:0; border-radius:50%; display:flex; justify-content: center; align-items: center; flex-direction: column; z-index:9; cursor:pointer; }
+header #menu{position:absolute; top:15px; right:2%; width:50px; height:50px; background: linear-gradient(45deg, #3f00a5, #a24be1) #3f00a5; border:0; border-radius:50%; display:flex; justify-content: center; align-items: center; flex-direction: column; z-index:9; }
 header #menu .bar{width:20px; height:2px; background:#fff; margin-bottom:5px; display:block; }
 #main01{position:relative; width:100%; height:100vh; background:url(./main2.569c2e42df8fe296c091-DUSnlIm2.jpg) top center no-repeat; background-size:cover; }
 #main01 .txtbox{position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); text-align: center; }
@@ -107,7 +107,7 @@ header #menu .bar{width:20px; height:2px; background:#fff; margin-bottom:5px; di
 
 #nav{position: fixed;top: 0;right: -100%; width: 100%; max-width:320px; height: 100%; background: linear-gradient(45deg, #3f00a5, #a24be1) #3f00a5; z-index: 9; transition: right 0.5s ease, opacity 0.5s ease;  opacity: 0;}
 #nav.active { right: 0; opacity: 1;pointer-events: auto; }
-#nav .close{position:absolute; right:10px; top:20px; color:#fff; background:transparent; border:0; font-size:24px; cursor:pointer;}
+#nav .close{position:absolute; right:10px; top:20px; color:#fff; background:transparent; border:0; font-size:24px; }
 #nav ul{position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; list-style: none; padding: 0; margin: 0; }
 #nav ul a{display: block; color:#fff; font-size:24px; margin: 10px 0; text-decoration: none; transition: color 0.3s;}
 #nav ul a:hover{color:#e6d0f9;text-shadow: 0 0 10px #ef3bff; }
@@ -139,7 +139,7 @@ header #menu .bar{width:20px; height:2px; background:#fff; margin-bottom:5px; di
 .port .titBox .btn{background-color: #fff; border:1px solid #000; padding:5px 20px; transition: 0.5s background-color;}
 .port .titBox .btn:hover{background-color:#3f00a5; color:#fff; }
 .port .contentBox{display:flex; width:90%; margin:auto; justify-content: space-between; align-items: stretch; flex-wrap:wrap; margin-top:50px; }
-.port .contentBox .content{width:32%; margin-left:1%; margin-bottom:1%; display:flex; flex-direction: column; position:relative; border-radius:30px; overflow: hidden; cursor:pointer;}
+.port .contentBox .content{width:32%; margin-left:1%; margin-bottom:1%; display:flex; flex-direction: column; position:relative; border-radius:30px; overflow: hidden;}
 .port .contentBox .content:first-child{margin-left:0;}
 .port .contentBox .content:nth-child(3n+1){margin-left:0;}
 .port .contentBox .content .imgBox{width:100%; height:400px; overflow:hidden; position:relative; }
